@@ -1,0 +1,47 @@
+<%- include('../partials/html-head') %>
+
+<link rel="stylesheet" href="/stylesheets/memes/index.css" />
+<%- include('../partials/nav') %>
+
+<main>
+  <section>
+    <h1>😂 Meme Factory 🏭</h1>
+
+    <div id="add-meme">
+      <% if (user) { %>
+        <h2>Add a Meme!</h2>
+        <form action="/memes" method="POST">
+          <div id="input-field">
+            <label class="form-item">
+              Title: 
+              <input class="text-input" size="30" type="text" name="title" placeholder="Typical day of a leo.." autocomplete="off" required>
+            </label>
+            <label class="form-item">
+              URL: 
+              <input class="text-input" size="30" type="text" placeholder="https://funnyLeoMemeatcollegeparty.dsei.aeif" name="url" autocomplete="off" required>
+            </label class="form-item">
+            <label>
+              Funny?
+              <input type="checkbox" name="funny">
+            </label>
+          </div>
+          <button class="form-btn btn" type="submit">Add Meme</button>
+        </form>
+      <% } %>
+    </div>
+
+    <div id="show-meme">
+      <h2>All the Zodiac Memes!</h2>
+      <ul>
+      <% memes.forEach(meme => { %>
+        <li> 
+          😹
+          <a href="/memes/<%= meme._id %>"><%= meme.title %></a> 
+          is <%= meme.funny ? 'funny' : 'not funny' %></li>
+      <% }) %>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<%- include('../partials/footer') %>

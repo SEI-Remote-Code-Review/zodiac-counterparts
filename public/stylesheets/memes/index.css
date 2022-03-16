@@ -1,0 +1,80 @@
+h1 {
+  margin-bottom: 5rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem 0 2rem;
+}
+
+p
+{   
+  margin: 0 3rem 0 3rem;
+}
+
+#add-meme {
+  margin-top: 1rem;
+  min-width: 40rem;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#show-meme {
+  margin-top: 5rem;
+  min-width: 40rem;
+  font-size: 1.4rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 12rem;
+}
+
+label.form-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  border-radius: 5px;
+  border-color: #6661F1;;
+  height: 50px;
+  background-color: transparent;
+  color: #6661F1;;
+  font-weight: bold;
+  font-size: 20px;
+  transition: none;
+  box-shadow: none;
+}
+
+.form-btn {
+  margin-top: 4rem;
+  width: 40rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.form-btn:hover {
+  background-color: #6661F1;
+  color: whitesmoke;
+}
+
+#input-field {
+  min-height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+input[type=checkbox] {
+  vertical-align: text-bottom;
+  transform : scale(1.2);
+}
+
+

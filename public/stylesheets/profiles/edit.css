@@ -1,0 +1,89 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 12rem;
+}
+
+
+label.form-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+div#edit-thought{
+  width: 40rem;
+  font-size: 1.4rem;
+}
+
+#show-items {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+} 
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 12rem;
+}
+
+label.form-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  border-radius: 5px;
+  border-color: #6661F1;
+  height: 50px;
+  background-color: transparent;
+  color: #6661F1;;
+  font-weight: bold;
+  font-size: 20px;
+  transition: none;
+  box-shadow: none;
+}
+
+.edit-btn {
+  margin-top: 4rem;
+  width: 40rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.edit-btn:hover {
+  background-color: #6661F1;;
+  color: whitesmoke;
+}
+
+
+
+p{
+  font-size: 1.4rem;
+  text-align: left;
+  margin: 0;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+form.delete, form.edit {
+  display: inline;
+}
+
+#input-field {
+  min-height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+input[type=text] {
+  min-width: 260px;
+}
+select {
+  margin-right: 210px;
+}

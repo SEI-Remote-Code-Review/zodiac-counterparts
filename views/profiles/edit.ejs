@@ -1,0 +1,42 @@
+<%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/profiles/edit.css" />
+<%- include('../partials/nav') %>
+
+
+<main>
+  <section>
+    <h1>Edit your thought</h1>
+
+    <div id="edit-thought">
+        <form action="/profiles/<%=profile._id %>/thoughts/<%= thought._id %>?_method=PUT" method="POST">
+          <div id="input-field">
+            <label class="form-item">
+              Title: 
+              <input type="text" name="title" value="<%= thought.title %>" autocomplete="off">
+            </label>
+            <label class="form-item">
+              I'm feeling: 
+                <select name="mood">
+                  <option value="☀️">☀️</option>
+                  <option value="🌤">🌤</option>
+                  <option value="🌥">🌥</option>
+                  <option value="🌧">🌧</option>
+                  <option value="⚡️">⚡️</option>
+                  <option value="🌈">🌈</option>
+                </select>
+            </label>
+            <label class="form-item">
+              Comment: 
+              <input type="text" name="comment" value="<%= thought.comment %>" autocomplete="off">
+            </label>
+          </div>
+          <button class="btn edit-btn" type="submit">Edit Post</button>
+        </form>
+
+    </div>
+
+  </section>
+</main>
+
+
+<%- include('../partials/footer') %>

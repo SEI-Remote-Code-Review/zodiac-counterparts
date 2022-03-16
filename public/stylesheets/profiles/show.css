@@ -1,0 +1,88 @@
+h1 {
+  margin-bottom: 5rem;
+}
+
+img.profile-avatar {
+  margin-bottom: 5rem;
+  border-radius: 5px;
+  width: 20rem;
+  height: 20rem;
+}
+
+div#add-thought, #show-thought {
+  width: 40rem;
+  font-size: 1.4rem;
+}
+
+#show-items {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+} 
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 12rem;
+}
+
+label.form-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  border-radius: 5px;
+  border-color: #6661F1;
+  height: 50px;
+  background-color: transparent;
+  color: #6661F1;
+  font-weight: bold;
+  font-size: 20px;
+  transition: none;
+  box-shadow: none;
+}
+
+.form-btn {
+  margin-top: 4rem;
+  width: 40rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.form-btn:hover {
+  background-color: #6661F1;
+  color: whitesmoke;
+}
+
+.edit-btn, .delete-btn {
+  width: 6rem;
+  height: 3rem;
+  font-size: 1rem;
+}
+
+p{
+  font-size: 1.4rem;
+  text-align: left;
+  margin: 0;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+form.delete, form.edit {
+  display: inline;
+}
+
+#input-field {
+  min-height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+select {
+  margin-right: 210px;
+}

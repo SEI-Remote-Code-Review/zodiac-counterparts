@@ -1,70 +1,64 @@
-# MEN Stack with OAuth Template
+# Zodiac Pair Comparison
 
-This is a MEN Stack template that includes OAuth.
+## A MEN Stack CRUD Application
 
-Use this to go build things! 🚀
+## Why I Started This
+- Continuing from Unit 1, I built this to market my app, a Chinese zodiac-based friend discovery app, and raise awareness of Chinese Zodiacs in general.
+- Many people know their Western zodiac sign, so I thought it'd be fun to teach new users their Chinese sign in the context of their Western sign.
+- People generally know what Chinese Zodiac signs are, but they rarely know their sign. 
+- All astrology shares the same root. The most widely known zodiac is the Year Zodiac. 
+- As there are Sun and Moon Signs, Rising Signs - There are Year, Day, Month, Hour signs in Chinese zodiac. 
+- The Sun sign in Western astrology corresponds to the Month Sign in Chinese Zodiac, demonstrating your personality as it blends into your immediate environment (family, friends, work). 
 
-## To Use This Template
+## Key Features
+- Zodiac Counterparts (Main Feature)
+  - Zodiac Comparisons
+  - Participate in poll and leave comments
+  - Admin Access 
+- Profile 
+  - Leave daily thoughts
+- Zodiac Meme
+  - Share and make funny / not funny
 
-__Replace `<name-of-your-app-here>` in the commands below with the name of your app!__
+## Getting Started
+- <a href="https://zodiac-counterparts.herokuapp.com/">Link</a>
 
-```bash
-git clone https://github.com/SEI-Remote/men-stack-oauth-template.git <name-of-your-app-here>
-cd <name-of-your-app-here>
-```
 
-Once you are in the project directory:
+## Screenshots
+<img src="https://i.imgur.com/zvXj1S4_d.webp?maxwidth=760&fidelity=grand"  alt="sublanding">
 
-```bash
-rm -rf .git
-```
+## Technologies Used 
+- Mongoose, Express, Node.JS, HTML, CSS
 
-Here's what your command line output should like after this step (note that the indicator that we are in a git repository is gone!)
+## Credits
+- Emojis: Hang5 (https://www.hangfive.co)
+- Co-Star, Victoria and Albert Museum, The Times of India, Chinahighlights
+- Korean blogger/astrologer (mahagaseup37) : https://blog.daum.net/mr4218/12726191
 
-<img src="https://i.imgur.com/L47kNOZ.png" alt="The command line before and after running the rm -rf .git command. Before git:(main) is visible indicating that the directory contains a git repository, after the command it is not.">
+## Original Wireframes
+<img src="https://i.imgur.com/JgpvbD4_d.webp?maxwidth=760&fidelity=grand" alt="original wireframes">
 
-Re-initialize a git repository:
+## ERD
+<img src="https://i.imgur.com/wuzG7j0_d.webp?maxwidth=760&fidelity=grand" alt="ERD">
 
-```bash
-git init
-```
-Use whatever method you'd like to get your project on GitHub. If you're looking for speed though use the GitHub CLI to create a new project repository on GitHub:
+## Challenges
+- Referencing to the Profile Document from the sub-document of another document (Zodiac)
 
-```bash
-gh repo create <name-of-your-app-here> --public --source .
-```
-Check out the docs [here](https://cli.github.com/manual/gh_repo_create) if you want to learn more about this command. 
+## Findings/Questions
+- Difference between .toString and .toString()
 
-Run npm i to fetch the template's dependencies:
+## Next Steps (backlog)
+- If you make a comment in zodiac/show, a guest can't access the particular zodiac show page ( because of protected route)
+- If comment becomes really long, the format breaks (zodiac / comments)
+- Everyone can delete anyone's comment on zodiac page. 
+- You can't edit zodiac/comments
+- Pagination or Infinite Scroll for zodiac comments
+- New page for comments
+- Dynamic nav icon, favicon
+- Refactor Poll
+- Receive user's bday. system remembers user's bday, results.
+- 3rd party api for zodiac descriptions
+- Profile responsive CSS - customized
+- mobile responsive 
 
-```bash
-npm i
-```
 
-touch a .env file:
-
-```bash
-touch .env
-```
-
-Fill it with the following:
-
-```
-DATABASE_URL=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-GOOGLE_CALLBACK=http://localhost:3000/auth/google/oauth2callback
-GOOGLE_CLIENT_ID=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-GOOGLE_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-SESSION_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-Replace the `DATABASE_URL`, `GOOGLE_CLIENT_ID`, `GOOGLE_SECRET`, and `SESSION_SECRET` with values that you provide.
-
-Delete this README.md and finally, make an initial commit:
-
-```bash
-git add .
-git commit -m "initial commit"
-git push -u origin main
-```
-
-You're done!
